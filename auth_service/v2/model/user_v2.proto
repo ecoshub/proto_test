@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package user_v2;
+
+option go_package = "../user_v2";
+
+message User{
+    string uuid = 1;
+    string username = 2;
+    string password = 3;
+}
