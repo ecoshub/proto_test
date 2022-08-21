@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package auth_service;
 
-import "auth_service/v1/model/user_v1.proto";
+import "auth_service/v2/model/user.v2.proto";
 
-option go_package = "./service_grpc_v1";
+option go_package = "./service_grpc.v2";
 
 service AuthService {
     rpc Login(user.User) returns (user.User){}

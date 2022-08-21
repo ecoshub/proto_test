@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package elo.v1;
+
+option go_package = "../elo.v1";
+
+message Elo{
+    string userID = 1;
+    int64 elo = 2;
+}

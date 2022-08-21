@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package token.v1;
+
+option go_package = "../token.v1";
+
+message Token{
+    string token = 1;
+    int64 creted_at = 2;
+    int64 duration = 3;
+}
