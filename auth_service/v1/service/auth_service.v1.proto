@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package auth_service;
 
-import "../generic/v1/model/user.v1.proto";
+import "generic/v1/model/user.v1.proto";
 import "auth_service/v1/model/token.v1.proto";
 
 option go_package = "./auth_service.v1";
 
 service AuthService {
-    rpc Login(user.User) returns (token.Token){}
+    rpc Login(user.v1.User) returns (token.v1.Token){}
 }

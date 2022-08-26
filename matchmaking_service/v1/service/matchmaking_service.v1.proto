@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package matchmaking_service;
 
-import "../generic/v1/model/user.v1.proto";
-import "matchmaking_service/v1/model/user.v1.proto";
+import "generic/v1/model/user.v1.proto";
+import "matchmaking_service/v1/model/elo.v1.proto";
 
-option go_package = "./service_grpc.v1";
+option go_package = "./matchmaking_service.v1";
 
 service AuthService {
-    rpc Match(elo.Elo) returns (user.User){}
+    rpc Match(elo.v1.Elo) returns (user.v1.User){}
 }
